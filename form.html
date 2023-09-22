@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+
+<form action="/action_page.php">
+    <fieldset>
+        <legend>사용자 정보 입력창</legend>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" ><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" ><br><br>
+        <select>
+            <optgroup label="경기도">
+                <option selected>평택시</option>
+                <option>수원시</option>
+                <option>구리시</option>
+                <option>화성시</option>
+            </optgroup>
+            <optgroup label="충청도">
+                <option>천안시</option>
+                <option>삽교</option>
+                <option>당진</option>
+            </optgroup>
+            <optgroup label="경상도">
+                <option>대구광역시</option>
+                <option>포항시</option>
+                <option>부산광역시</option>
+            </optgroup>
+        </select>
+        <br><br>
+        성별:
+        <input type="radio" id="male" name="male" value="male" checked>
+        <label for="male">남자</label>
+        <input type="radio" id="female" name="male" value="female">
+        <label for="female">여자</label><br><br>
+
+        취미:
+        <input type="checkbox" id="hobby1" name="hobby1" value="hobby1">
+        <label for="hobby1">당구
+            <input type="checkbox" id="hobby2" name="hobby2" value="hobby2">
+        <label for="hobby2">볼링
+            <input type="checkbox" id="hobby3" name="hobby3" value="hobby3">
+        <label for="hobby3">테니스
+            <input type="checkbox" id="hobby4" name="hobby4" value="hobby4">
+        <label for="hobby4">배드민턴<br><br>
+
+        <label for="birthday">생일을 작성해주세요 :</label>
+        <input type="date" id="birthday" name="birthday" value="birthday">
+        <br><br>
+
+        <label for="personality">성격입력 : </label><br>
+        <textarea id="personality" name="personality" rows="4" cols="50">당신의 성격을 작성해주세요.
+        </textarea>
+        <br><br>
+
+        <label for="color">가장 좋아하는 색을 선택하세요:</label>
+        <input list="colors" name="color" id="color">
+        <datalist id="colors">
+            <option value="red">
+            <option value="blue">
+            <option value="green">
+            <option value="purple">
+            <option value="aqua">
+            <option value="pink">
+            <option value="red-wine">
+        </datalist>
+
+        <input type="color">
+        <br><br>
+        <input type="submit" value="작성완료">
+        <input type="reset" value="새로고침">
+
+
+    </fieldset>
+
+</form> 
+
+
+</body>
+</html>
+
