@@ -1,0 +1,18 @@
+
+ <invitation>
+    <customer type = "registered">
+      <name>John Doe</name>
+      <address1>123 Main St.</address1>
+      <address2></address2>
+      <city>Anytown</city>
+      <state>Anystate</state>
+      <zip>12345</zip>
+      <phone>555-1234</phone>
+      <flag gender = "F"/>  
+    </customer>
+
+   <salutation>Dear Sir:</salutation>
+   <paragraph>It is our privilege. We invite...</paragraph>
+   <closing>Sincerely</closing>
+   <signature>Mr. Doe</signature>
+</invitation>

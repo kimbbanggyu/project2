@@ -1,0 +1,37 @@
+<?xml version = "1.0"?>
+<!DOCTYPE invitation [
+<!ELEMENT invitation ( customer+,salutation+,paragraph+,closing+,signature+ )>
+<!ELEMENT customer ( name+,flag+,address1+,address2+,city+,state+,zip+,phone+ )>
+<!ATTLIST customer type CDATA #REQUIRED> 
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT salutation (#PCDATA)>
+<!ELEMENT paragraph (#PCDATA)>
+<!ELEMENT closing (#PCDATA)>
+<!ELEMENT signature (#PCDATA)>
+<!ELEMENT flag (#PCDATA)>
+<!ELEMENT address1 (#PCDATA)>
+<!ELEMENT address2 (#PCDATA)>
+<!ELEMENT city (#PCDATA)>
+<!ELEMENT state (#PCDATA)>
+<!ELEMENT zip (#PCDATA)>
+<!ELEMENT phone (#PCDATA)> 
+<!ATTLIST flag gender (M | F) "F" >
+]>
+
+<invitation>
+    <customer type = "not visited long time">
+      <name>John Doe</name>
+      <address1>123 Main St.</address1>
+      <address2></address2>
+      <city>Anytown</city>
+      <state>Anystate</state>
+      <zip>12345</zip>
+      <phone>555-1234</phone>
+      <flag gender = "Not Known"/>  
+    </customer>
+
+   <salutation>Dear Sir:</salutation>
+   <paragraph>It is our privilege. We invite...</paragraph>
+   <closing>Sincerely</closing>
+   <signature>Mr. Doe</signature>
+</invitation>
